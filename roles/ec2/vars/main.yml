@@ -1,0 +1,18 @@
+---
+# vars file for ec2
+instance_tag:
+        - nfs-system
+        - master
+        - slave1
+        - slave2
+
+python_pkgs:
+        - boto
+        - boto3
+
+sg_name: Kubernetes-SG
+region_name: us-east-1
+subnet_name: subnet-e1c1bbbe
+ami_id: ami-087c17d1fe0178315
+keypair: awskey
+instance_flavour: t2.small
