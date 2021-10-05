@@ -71,6 +71,11 @@ spec:
         ports:
         - containerPort: 80
           name: wordpress
+          resources:
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 200m
         volumeMounts:
         - name: wordpress-persistent-storage
           mountPath: /var/www/html
